@@ -20,7 +20,7 @@ public class MyString {
     public static String lowerCase(String str) {
         // Replace the following statement with your code
         String result = "";
-        int i = 0;
+        int i=0;
         while (i < str.length()) {
         char c = str.charAt(i);
 
@@ -38,10 +38,16 @@ public class MyString {
     public static boolean contains(String str1, String str2) {
         // Replace the following statement with your code
         
-        if (str2.length() == 0 || str2.length() > str1.length()) {
+        if (str2.length() == 0) {
+            return true;
+        }
+
+           if (str2.length() > str1.length()) {
         return false;
-    }
+        }
+    
     int i = 0;
+    
     while (i <= str1.length() - str2.length()) {
         int j = 0;
 
@@ -55,5 +61,5 @@ public class MyString {
     }
     return false; 
 }
-    }
+}
 
