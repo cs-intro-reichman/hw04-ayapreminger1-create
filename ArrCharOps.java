@@ -186,7 +186,18 @@ public class ArrCharOps {
      */
     public static int compareTo(String str1, String str2) {
         // Replace the following statement with your code
-    
+    if (str1 == null) {
+        return -2;
+    }
+    if (str2 == null) {
+        return -2;
+    }
+    if (str1.length() == 0) {
+        return -2;
+    }
+    if (str2.length() == 0) {
+        return -2;
+    }
         int i = 0;
         while (i < str1.length() && i < str2.length()) {
             char c1 = str1.charAt(i);
